@@ -1,33 +1,26 @@
 # setup ubuntu18.04
 
-##virtualbox ubuntu18.04 ダウンロード
+## virtualbox ubuntu18.04 ダウンロード
 
 
 [https://www.virtualbox.org/](https://www.virtualbox.org/)
 
-[https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes?_ga=2.57163114.1536008714.1532674987-1336847961.1529988881](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes?_ga=2.57163114.1536008714.1532674987-1336847961.1529988881)
+[https://www.ubuntu.com/download/desktop](https://www.ubuntu.com/download/desktop)
 
 ## Guest Addisons インストール
 
-![guest1.png](https://github.com/ntyaan/setup_ubuntu18.04/tree/master/image/guest1.png)
+![guest1.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/guest1.png)
 
-![guest2.png](https://github.com/ntyaan/setup_ubuntu18.04/tree/master/image/guest2.png)
+![guest2.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/guest2.png)
 
 ### クリップボード双方向
 
-![share.png](https://github.com/ntyaan/setup_ubuntu18.04/tree/master/image/clip.png)
-
+![share.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/clip.png)
 
 ## まずinstallするもの
 
 ```
-~$ sudo add-apt-repository ppa:kelleyk/emacs; \ 
-sudo apt update; sudo apt upgrade ; \ 
-sudo apt install git emacs26 vim texlive-full \ 
-fontforge gnuplot libboost-dev aspell ssh \ 
-libfcgi-dev spawn-fcgi nginx cifs-utils make \ 
-gcc g++ doxygen graphviz python-pip ; \ 
-echo "lang en_US" >> ~/.aspell.conf
+~$ sudo add-apt-repository ppa:kelleyk/emacs ; sudo apt update; sudo apt upgrade ; sudo apt install git emacs26 vim texlive-full fontforge gnuplot libboost-dev aspell ssh libfcgi-dev spawn-fcgi nginx cifs-utils make gcc g++ doxygen graphviz python-pip ; echo "lang en_US" >> ~/.aspell.conf
 ```
 
 ### virtualbox PC間でscp
@@ -45,7 +38,7 @@ echo "lang en_US" >> ~/.aspell.conf
 
 ### virtualbox windows 共有フォルダ
 
-![share.png](https://github.com/ntyaan/setup_ubuntu18.04/tree/master/image/share.png)
+![share.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/share.png)
 
 ```
 ~$ mkdir share
@@ -54,7 +47,7 @@ echo "lang en_US" >> ~/.aspell.conf
 ~$ sudo mount -t share_k share
 ```
 
-![share.png](https://github.com/ntyaan/setup_ubuntu18.04/tree/master/image/auto.png)
+![share.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/auto.png)
 
 [share.sh](https://github.com/ntyaan/setup_ubuntu18.04/blob/master/share.sh)
 
