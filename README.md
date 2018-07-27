@@ -1,8 +1,5 @@
 # setup ubuntu18.04
 
-## virtualbox ubuntu18.04 ダウンロード
-
-
 [https://www.virtualbox.org/](https://www.virtualbox.org/)
 
 [https://www.ubuntu.com/download/desktop](https://www.ubuntu.com/download/desktop)
@@ -97,7 +94,9 @@ dpkg-deb: エラー: ペースト subprocess was killed by signal (Broken pipe)
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 ```
 emacs-mozcをインストールするとemacs25も含まれるためemacs26がすでにインストールされているとエラーが出るっぽい？
+
 emacs関連のパッケージを強制削除して、再インストール
+
 emacs26を使いたい場合emacs-mozcを使わないようにしてエラーを回避した
 
 ```
