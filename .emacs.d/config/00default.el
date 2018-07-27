@@ -98,8 +98,8 @@
 ;; スクロールの加速をやめる
 ;;(setq mouse-wheel-progressive-speed nil)
 ;; 全角半角キーを定義する
-(define-key global-map [zenkaku-hankaku] 'toggle-input-method)
-(require 'mozc)
+;;(define-key global-map [zenkaku-hankaku] 'toggle-input-method)
+;;(require 'mozc)
 ;; or (load-file "/path/to/mozc.el")
-(set-language-environment "Japanese")
-(setq default-input-method "japanese-mozc")
+;;(set-language-environment "Japanese")
+;;(setq default-input-method "japanese-mozc")
