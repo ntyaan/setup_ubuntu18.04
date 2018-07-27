@@ -29,7 +29,7 @@
 ~$ scp -P 設定したport[2222] -r 送信ファイル 受信ファイル(user[virtualbox]@172.xxx.xxx.xxx:/home/user/)
 ```
 
-### mount cifs でサーバののファイルをマウント
+### mount cifs でサーバのファイルをマウント
 
 ```
 ~$ mkdir MyVolume
