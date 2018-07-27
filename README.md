@@ -7,7 +7,7 @@
 
 [https://www.ubuntu.com/download/desktop](https://www.ubuntu.com/download/desktop)
 
-## Guest Addisons インストール
+### Guest Addisons インストール
 
 ![guest1.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/guest1.png)
 
@@ -17,7 +17,7 @@
 
 ![share.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/clip.png)
 
-## まずinstallするもの
+### まずinstallするもの
 
 ```
 ~$ sudo add-apt-repository ppa:kelleyk/emacs ; sudo apt update; sudo apt upgrade ; sudo apt install git emacs26 vim texlive-full fontforge gnuplot libboost-dev aspell ssh libfcgi-dev spawn-fcgi nginx cifs-utils make gcc g++ doxygen graphviz python-pip ; echo "lang en_US" >> ~/.aspell.conf
@@ -25,11 +25,15 @@
 
 ### virtualbox PC間でscp
 
+sshできるようにvirtualboxの設定
+
+![ssh.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/ssh.png)
+
 ```
 ~$ scp -P 設定したport[2222] -r 送信ファイル 受信ファイル(user[virtualbox]@172.xxx.xxx.xxx:/home/user/)
 ```
 
-### mount cifs でサーバののファイルをマウント
+### mount cifs でサーバのファイルをマウント
 
 ```
 ~$ mkdir MyVolume
@@ -62,7 +66,7 @@ markdownテキストエディタ
 ~/ダウンロード$ sudo dpkg -i haroopad-v0.xx.x-x64.deb
 ```
 
-これだけでharoopadを開こうとするとubuntu18.04だとlibgconf-2.so.4: cannot open ...と言われるので
+これだけでharoopadを開こうとするとubuntu18.04ではlibgconf-2.so.4: cannot open ...と言われるので
 
 [https://www.ubuntuupdates.org/package/core/bionic/universe/base/libgconf-2-4](https://www.ubuntuupdates.org/package/core/bionic/universe/base/libgconf-2-4)から"libgconf-2-4" 64bit deb packageをダウンロード
 
@@ -92,7 +96,7 @@ dpkg-deb: エラー: ペースト subprocess was killed by signal (Broken pipe)
  /var/cache/apt/archives/emacs25-common_25.3~1.gite0284ab-kk1+18.04_all.deb
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 ```
-emacs-mozcをインストールするとemacs25も含まれてemacs26がすでにインストールされているとエラーが出るっぽい？
+emacs-mozcをインストールするとemacs25も含まれるためemacs26がすでにインストールされているとエラーが出るっぽい？
 emacs関連のパッケージを強制削除して、再インストール
 emacs26を使いたい場合emacs-mozcを使わないようにしてエラーを回避した
 
