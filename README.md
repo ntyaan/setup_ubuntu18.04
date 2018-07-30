@@ -27,7 +27,7 @@ sshできるようにvirtualboxの設定
 ![ssh.png](https://github.com/ntyaan/setup_ubuntu18.04/blob/image/image/ssh.png)
 
 ```
-~$ scp -P 設定したport[2222] -r 送信ファイル 受信ファイル(user[virtualbox]@172.xxx.xxx.xxx:/home/user/)
+~$ scp -P 設定したport[2222] -r 送信元ファイル 受信元(user[virtualbox]@172.xxx.xxx.xxx:/home/user/)
 ```
 
 ### mount cifs でサーバのファイルをマウント
@@ -52,7 +52,7 @@ sshできるようにvirtualboxの設定
 
 [share.sh](https://github.com/ntyaan/setup_ubuntu18.04/blob/master/share.sh)
 
-## haroopad
+### haroopad
 
 markdownテキストエディタ
 
@@ -72,7 +72,7 @@ markdownテキストエディタ
 ~/ダウンロード$ sudo apt --fix-broken install
 ```
 
-## Ricty
+### Ricty
 
 プログラミング用フォント
 
@@ -80,6 +80,15 @@ markdownテキストエディタ
 
 ttfファイルを右クリック，別のアプリケーションで開く，Fonts，選択，インストール
 
+### C++行列演算ライブラリ
+
+[http://eigen.tuxfamily.org/index.php?title=Main_Page](http://eigen.tuxfamily.org/index.php?title=Main_Page)
+
+```
+~$ tar -jxvf eigen-eigen-b3f3d4950030.tar.bz2 
+~$ cd eigen-eigen-b3f3d4950030/
+~/eigen-eigen-b3f3d4950030$ sudo cp -r Eigen/ /usr/local/include/
+```
 
 ##### emacs25とemacs26の依存関係でのエラー
 
